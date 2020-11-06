@@ -5,11 +5,12 @@
 {% endblock %}
 
 {% block content %}
+
   <h1>{{platform.name}}</h1>
   <img src="{{platform.platform_logo.url}}" alt="{{platform.name}}">
   <ul>
     {% for game in platform.games %}
-      <li>
+      <li class="li">
         {% if game.cover.url %}
           <img src="{{game.cover.thumbnail}}" alt="{{game.name}} cover">
         {% else %}
@@ -19,4 +20,5 @@
       </li>
     {% endfor %}
   </ul>
+  
 {% endblock %}

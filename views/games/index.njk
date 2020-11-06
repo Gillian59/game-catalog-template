@@ -5,16 +5,23 @@
 {% endblock %}
 
 {% block css %}
+
+
+
 {% endblock %}
 
 {% block content %}
+<div class="title">
   <h1>Games</h1>
+  </div>
+  <div class="games">
   <ul>
     {% for game in games %}
-      <li>
+      <li class="li">
         <img src="{{game.cover.thumbnail}}" alt="{{game.name}} cover">
         <h3><a href="/games/{{game.slug}}">{{game.name}}</a></h3>
       </li>
     {% endfor %}
   </ul>
+  </div>
 {% endblock %}

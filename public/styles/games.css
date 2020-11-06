@@ -1,0 +1,17 @@
+.games {
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    word-break: keep-all
+}
+
+.title{
+    text-align: center;
+
+}
+
+.li {
+
+    list-style-type: none; 
+}
